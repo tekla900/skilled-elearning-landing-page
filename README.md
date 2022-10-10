@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/tekla900/skilled-elearning-landing-page)
 - Live Site URL: [GitHub Pages](https://your-live-site-url.com)
 
 ## My process
