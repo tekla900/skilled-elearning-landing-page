@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+:root {
+    --purple: #666CA3;
+    --dark-blue: #13183F;
+    --gray: #83869A;
+    --bright-pink: #F74780;
+    --light-pink: #FFA7C3;
+    --white: #FFFFFF;
+    --btn1: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+    --btn2: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%), white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 165px;
+    margin-left: 165px;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  align-items: center;
+  margin: 45px 165px;
+  margin-bottom: 0;
+  width: 100vw !important;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    height: 120px;
+    margin: 0;
+    padding: 45px 165px;
+    margin-top: 140px;
+}
+
+h1 {
+    font-size: 56px;
+    line-height: 70px;
+    color: var(--dark-blue);
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--dark-blue);
+}
+h3 {
+    font-size: 32px;
+    color: var(--dark-blue);
+    font-weight: 800;
+    line-height: 40px;
+}
+h4 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--dark-blue);
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+button {
+    cursor: pointer;
+    height: 56px;
+    width: 167px;
+    border-radius: 28px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: var(--white);
+}
+.btn1 {
+    background-color: var(--dark-blue);
+}
+.btn1:hover {
+    background-color: var(--purple);
+}
+.btn2 {
+    background: var(--btn1);
+    height: 63px;
+}
+.btn2:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--btn1);
+}
+.btn3 {
+    background: var(--btn2);   
+}
+.btn3:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), var(--btn2);
+}
+
+
+p {
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--gray)
+}
+p.medium {
+    font-size: 18px;
+    font-weight: 500;
+}
+p.small {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.landing {
+    display: flex;
+    margin-top: 170px;
+    margin-bottom: 250px;
+    /* border: 3px solid var(--bright-pink); */
+}
+
+.illustration {
+    width: 70%;
+    position: absolute;
+    top: -4rem;
+    right: -17rem;
+    z-index: -999;
+}
+
+
+.first-child, .sec-child {
+    width: 50%;
+}
+
+
+.first-child p {
+    margin-top: 29px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    row-gap: 80px;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    height: 322px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: var(--white);
+    position: relative;
+}
+
+.first {
+    background: var(--btn1);
+}
+
+.first h3 {
+    color: var(--white);
+    margin: 64px 32px;
+}
+
+
+a {
+    color: var(--bright-pink);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    position: absolute;
+    bottom: 40px;
+}
+a:hover {
+    color: var(--light-pink);
+}
+
+.card-content {
+    width: 286px;
+    margin: 64px auto;
+}
+
+.icon {
+    position: absolute;
+    top: -23px;
+    left: 32px;
+}
+
+.card-content p  {
+    margin-top: 24px;
+    width: 100%;
+}
+
+/* laptop */
+/* @media screen and (max-width: 1240px) {
+    
+    .card {
+        height: 322px;
+        width: 350px;
+    }
+
+
+    main {
+        margin: 39px auto;
+    }
+
+    .cards {
+        width: 100%;
+        column-gap: 10px;
+        row-gap: 56px;
+    }
+
+    .card-content {
+        width: 286px;
+        margin: 0 auto;
+    }
+    .card-content p  {
+        margin-top: 16px;
+        line-height: 26px;
+        font-size: 16px;
+    }
+
+    .card-content h4 {
+       margin-top: 56px;
+       size: 20px;
+       line-height: 25px;
+    }
+    a {
+        bottom: 32px;
+    }
+
+    footer {
+        margin-top: 86px;
+        padding: 36px;
+    }
+    header {
+        margin: 36px;
+        margin-bottom: 0;
+    }
+
+    .landing {
+        margin: 50px 36px 130px;
+    }
+} */
+
+
+/* tablet */
+
+
+@media screen and (max-width: 768px) {
+    main, header, footer {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        margin: 0 40px;
+    }
+
+    .landing {
+        margin-top: 60px;
+        margin-bottom: 160px;
+    }
+    /* .first-child {
+        border: 2px blue solid;
+    } */
+    .picture {
+        /* background-image: url('./assets/image-hero-tablet.png'); */
+        /* transform: translate(0px, -92px); */
+        /* background-repeat: no-repeat; */
+        /* background-size: contain; */
+        /* border: 2px red solid; */
+        /* position: relative; */
+        /* top: -100px; */
+        overflow-x: hidden !important;
+        /* left: 200px; */
+    }
+        /* min-width: 80%; */
+        /* min-height: 30vh; */
+      
+    .illustration {
+        width: 100%;
+        position: absolute;
+        top: -4rem;
+        right: -17rem;
+
+    }
+
+    .cards {
+        row-gap: 56px;
+        column-gap: 10px;
+    }
+    
+    .card {
+        width: 339px;
+    } 
+
+    footer {
+        margin-top: 86px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    button {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    header {
+        margin: 40px;
+        margin-bottom: 0;
+    }
+
+    footer {
+        padding: 40px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:375px)  {
+
+    main, header, footer {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        margin: 16px;
+        margin-bottom: 0;
+    }
+
+    footer {
+        padding: 36px 16px;
+    }
+
+    .landing {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 343px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .first {
+        height: 120px;
+    }
+    
+    .first h3 {
+        font-size: 24px;
+        margin: 24px 28px;
+        line-height: 32px;
+    }
+
+    .first-child, .sec-child {
+        width: 100%;
+    }
+
+    .first-child {
+        margin: 0 16px;
+    }
+
+    .first-child p {
+        margin-top: 26px;
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .btn1, .btn3 {
+        height: 48px;
+        width: 140px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .btn2 {
+        height: 56px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .picture {
+        background-image: url('./assets/image-hero-mobile.png');
+        background-size: cover;
+        min-width: 100%;
+        min-height: 30vh;
+        position: relative;
+        /* top: 90px; */
+      }  
+    
+    .cards {
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+    
+    .card {
+        width: 343px;
+    }
+
+    .illustration {
+        display: none;
+    }
+}
+
+/* tablet */
+/* @media screen and (max-width: 768px) {
+    .picture {
+        background-image: url('./assets/image-hero-tablet.png');
+        transform: translate(0px, -92px);
+        background-repeat: no-repeat;
+      }  
+} */
+  
+
+/* 
+  .picture {
+    background-image: url(https://cdn.glitch.global/f578afee-aad3-464c-bd99-1fca9fd0bcd8/Group%2019.png?v=1656876136360);
+    background-repeat: no-repeat;
+    min-height: 76vh;
+    transform: translate(0px, -85px);
+    width: 650px;
+    height: 700px;
+  } */
