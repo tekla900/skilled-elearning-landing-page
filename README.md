@@ -10,7 +10,7 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
--[Useful resources] (#useful-resources)
+- [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screen%20Shot%202022-10-10%20at%204.49.57%20PM.png)
+![](./screenshot.png)
 
 ### Links
 
