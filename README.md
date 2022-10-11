@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/tekla900/skilled-elearning-landing-page)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://tekla900.github.io/skilled-elearning-landing-page/)
 
 ## My process
 
